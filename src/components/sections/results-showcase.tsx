@@ -34,13 +34,13 @@ const ResultsShowcase = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/products.php"
+                href="/products"
                 className="bg-destructive text-destructive-foreground font-semibold py-[14px] px-7 rounded-full text-center hover:opacity-90 transition-opacity whitespace-nowrap"
               >
                 View Products
               </Link>
               <Link
-                href="/careers.php"
+                href="/careers"
                 className="bg-foreground text-background font-semibold py-[14px] px-7 rounded-full text-center hover:opacity-90 transition-opacity whitespace-nowrap"
               >
                 Join Our Team

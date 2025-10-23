@@ -23,7 +23,7 @@ const AboutIntro = () => {
             <p className="text-base text-gray-600 mb-8 leading-relaxed">
               RIM Digital assists organizations to assess their present IT infrastructure and provide appropriate assistance to upgrade to the top-notch level.
             </p>
-            <a href="/about.php" className="bg-primary text-white px-8 py-3 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors shadow-[0_4px_15px_rgba(0,102,204,0.3)]">
+            <a href="/about" className="bg-primary text-white px-8 py-3 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors shadow-[0_4px_15px_rgba(0,102,204,0.3)]">
               Read More
             </a>
           </div>
@@ -65,7 +65,7 @@ const AboutIntro = () => {
                 <h5 className="text-lg font-bold text-zinc-900">
                   Expert Team: Our Strength
                 </h5>
-                <a href="/about.php" className="flex-shrink-0 mt-[-5px]">
+                <a href="/about" className="flex-shrink-0 mt-[-5px]">
                   <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center hover:bg-primary/90 transition-colors">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

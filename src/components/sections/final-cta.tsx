@@ -10,7 +10,7 @@ const FinalCta = () => {
             <span className="font-medium">Exceed Your Expectations</span>
           </h2>
           <a
-            href="/contact.php"
+            href="/contact"
             className="inline-block rounded-lg bg-primary px-10 py-4 text-base font-bold text-white shadow-[0_4px_15px_rgba(0,102,204,0.3)] transition-transform duration-300 hover:scale-105"
           >
             Enquire with us

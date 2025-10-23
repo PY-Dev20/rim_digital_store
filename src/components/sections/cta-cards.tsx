@@ -8,13 +8,13 @@ const cardData = [
     bgImage: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/ac8a90f4-7aa0-4196-902e-e02017adac3a/generated_images/modern-rim-digital-retail-store-exterior-7e96f337-20251020184353.jpg?",
     title: "Transcending Expectations, Delivering Excellence",
     description: "We are committed to providing top-tier IT products and solutions, and our dedication to quality and performance ensures that every client receives the very best, tailored to their specific needs.",
-    link: "/contact.php",
+    link: "/contact",
   },
   {
     bgImage: "https://v3b.fal.media/files/b/elephant/9dVxPeq05ixfzd3z-yx33_output.png",
     title: "Strengthening Innovation Unlimited Success",
     description: "We make great things possible by delivering cutting-edge technology that drives innovation and business growth. With our expertise and a carefully curated selection of products, we help you achieve goals",
-    link: "/careers.php",
+    link: "/careers",
   }
 ];
 

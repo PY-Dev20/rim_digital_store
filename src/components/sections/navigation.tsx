@@ -6,14 +6,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
+// Fixed: Remove .php extensions from routes
 const navLinks = [
-  { href: "/index.php", label: "Home" },
-  { href: "/about.php", label: "About Us" },
-  { href: "/products.php", label: "Products" },
-  { href: "/brands.php", label: "Brands" },
-  { href: "/gallery.php", label: "Gallery" },
-  { href: "/careers.php", label: "Join Our Team" },
-  { href: "/contact.php", label: "Contact Us" },
+  { href: "/", label: "Home" }, // Changed from "/index.php"
+  { href: "/about", label: "About Us" }, // Changed from "/about.php"
+  { href: "/products", label: "Products" }, // Changed from "/products.php"
+  { href: "/brands", label: "Brands" }, // Changed from "/brands.php"
+  { href: "/gallery", label: "Gallery" }, // Changed from "/gallery.php"
+  { href: "/careers", label: "Join Our Team" }, // Changed from "/careers.php"
+  { href: "/contact", label: "Contact Us" }, // Changed from "/contact.php"
 ];
 
 const Navigation = () => {
@@ -43,7 +44,13 @@ const Navigation = () => {
     };
   }, [isMenuOpen]);
 
-  const sanitizedPathname = pathname === "/" ? "/index.php" : pathname;
+  // Fixed: Remove the sanitizedPathname logic since we're not using .php routes anymore
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <header
@@ -64,21 +71,18 @@ const Navigation = () => {
         </Link>
         <nav className="hidden lg:block">
           <ul className="flex items-center gap-8">
-            {navLinks.map(({ href, label }) => {
-              const isActive = sanitizedPathname === href;
-              return (
-                <li key={label}>
-                  <Link
-                    href={href}
-                    className={`text-sm font-semibold uppercase text-foreground transition-colors duration-300 hover:text-destructive ${
-                      isActive ? "text-destructive" : ""
-                    }`}
-                  >
-                    {label}
-                  </Link>
-                </li>
-              );
-            })}
+            {navLinks.map(({ href, label }) => (
+              <li key={label}>
+                <Link
+                  href={href}
+                  className={`text-sm font-semibold uppercase text-foreground transition-colors duration-300 hover:text-destructive ${
+                    isActive(href) ? "text-destructive" : ""
+                  }`}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className="lg:hidden">
@@ -117,21 +121,19 @@ const Navigation = () => {
         </div>
         <nav className="mt-8">
           <ul className="flex flex-col items-center gap-6">
-            {navLinks.map(({ href, label }) => {
-              const isActive = sanitizedPathname === href;
-              return (
+            {navLinks.map(({ href, label }) => (
               <li key={label}>
                 <Link
                   href={href}
                   onClick={() => setIsMenuOpen(false)}
                   className={`text-lg font-semibold uppercase text-foreground transition-colors duration-300 hover:text-destructive ${
-                    isActive ? "text-destructive" : ""
+                    isActive(href) ? "text-destructive" : ""
                   }`}
                 >
                   {label}
                 </Link>
               </li>
-            )})}
+            ))}
           </ul>
         </nav>
       </div>

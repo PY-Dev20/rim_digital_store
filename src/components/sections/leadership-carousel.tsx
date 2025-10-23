@@ -28,7 +28,7 @@ const leadershipData = [
     text: "At RIM Digital, we strive to be at the forefront of technological innovation. As CEO, I am dedicated to ensuring our products and services exceed your expectations. Our team is passionate about delivering reliable and advanced IT solutions that empower your business. We focus on thriving markets, providing tailored solutions to meet local demands. We value your trust and are committed to building strong, lasting relationships with our clients and partners.",
     image:
       "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/ac8a90f4-7aa0-4196-902e-e02017adac3a/generated_images/professional-corporate-executive-portrai-ddbbbc5d-20251020184418.jpg?",
-    link: "about.php",
+    link: "about",
   },
   {
     name: "Abdul Samad",
@@ -45,7 +45,7 @@ const leadershipData = [
     text: "As Chairman, I am proud to lead an organization committed to delivering exceptional IT products and services. Our journey is built on innovation, quality, and customer satisfaction. We focus on dynamic markets, ensuring our offerings meet the diverse needs of this vibrant region. Your trust and support drive our success, and we are grateful for your partnership.",
     image:
       "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/ac8a90f4-7aa0-4196-902e-e02017adac3a/generated_images/distinguished-business-chairman-portrait-1ff45e91-20251020184427.jpg?",
-    link: "about.php",
+    link: "about",
   },
 ];
 
